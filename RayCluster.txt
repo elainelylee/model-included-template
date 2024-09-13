@@ -1,0 +1,14 @@
+BASE - quay.io/domino/cluster-environment-images:ray2.4.0-py3.9-domino5.7
+DockerFile Instructions
+USER root
+RUN pip install mlflow==2.3.2
+#RUN sudo apt-get install -y cmake
+RUN pip install pytorch-lightning
+RUN pip install torchmetrics
+RUN pip install install lightning-bolts 
+#RUN pip install git+https://github.com/PytorchLightning/lightning-bolts.git@master --upgrade
+#RUN pip install torchvision
+#RUN pip install GPUtil
+RUN useradd -rm -d /home/ubuntu2 -s /bin/bash -g root -G sudo -u 12574 ubuntu2
+RUN pip install ipython
+RUN pip install pandas==1.4.1

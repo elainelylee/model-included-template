@@ -1,0 +1,9 @@
+mlflow==2.3.2
+wandb
+nvidia-ml-py3
+tensorflow==2.5.0
+tensorflow==2.5.0
+tbparse
+seaborn
+
+
